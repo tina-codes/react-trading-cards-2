@@ -84,7 +84,7 @@ def add_card():
     new_card = {
         "name": name,
         "skill": skill,
-        "imgUrl": "/static/img/placeholder.png",
+        "imgUrl": f"/static/img/{name}.jpg",
         "cardId": len(CARD_DATA) + 1,
     }
     CARD_DATA.append(new_card)

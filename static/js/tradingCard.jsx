@@ -72,7 +72,7 @@ function TradingCardContainer() {
   const tradingCards = [];
 
   for (const currentCard of cards) {
-    tradingCards.push(
+    tradingCards.unshift(
       <TradingCard
         key={currentCard.name}
         name={currentCard.name}
